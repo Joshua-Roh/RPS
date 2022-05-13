@@ -59,14 +59,14 @@ def display_choices(playerSelection, computerSelection):
 
 def score_tracker():
     print(f"Player's score is {player_score} and computer's score is {computer_score}")
-    if player_score == (NUM_ROUNDS-2):
+    if player_score == (NUM_ROUNDS):
         print(f"Player won {player_score} points out of 5. Player wins!")
-    elif computer_score == (NUM_ROUNDS-2):
+    elif computer_score == (NUM_ROUNDS):
         print(f"Computer won {computer_score} points out of 5. Computer wins!")
 
 def game():
     print("\nWelcome to Rock Paper Scissors")
-    while player_score < (NUM_ROUNDS-2) and computer_score < (NUM_ROUNDS-2):
+    while player_score < (NUM_ROUNDS) and computer_score < (NUM_ROUNDS):
         play_round(player_choice, computer_choice)
         score_tracker()
 game()
