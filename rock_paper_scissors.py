@@ -65,11 +65,8 @@ def score_tracker():
         print(f"Computer won {computer_score} points out of 5. Computer wins!")
 
 def game():
+    print("\nWelcome to Rock Paper Scissors")
     while player_score < (NUM_ROUNDS-2) and computer_score < (NUM_ROUNDS-2):
         play_round(player_choice, computer_choice)
         score_tracker()
-
-
-
-print("\nWelcome to Rock Paper Scissors")
 game()
